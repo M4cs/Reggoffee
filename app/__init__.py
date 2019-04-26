@@ -17,7 +17,6 @@ api = Api(app)
 from app import resources
 
 api.add_resource(resources.MadeCoffee, '/madecoffee')
-api.add_resource(resources.OutOfCoffee, '/outofcoffee')
 api.add_resource(resources.CheckStatus, '/status')
 api.add_resource(resources.Leaderboard, '/leaderboard')
 api.add_resource(resources.MyPoints, '/mypoints')
