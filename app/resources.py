@@ -148,6 +148,7 @@ class CheckStatus(Resource):
             leftreport = data['leftpot']['reported_by']
             rightstatus = data['rightpot']['status']
             rightreport = data['rightpot']['reported_by']
+            print(leftstatus)
             if leftstatus == True:
                 lstat = 'There Is Coffee!'
             else:
