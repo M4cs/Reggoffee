@@ -183,19 +183,19 @@ class Leaderboard(Resource):
                 "text": "*Current Coffee Leaderboard (Top 5)*",
                 "attachments": [
                     {
-                        "text": "*#1:* " + newDict[0] + " *|* " + str(data[newDict[0]]) + " Points",
+                        "text": ":first_place_medal: *#1:* " + newDict[0] + " *|* :star: " + str(data[newDict[0]]) + " Points :star: ",
                     },
                     {
-                        "text": "*#2:* " + newDict[1] + " *|* " + str(data[newDict[1]]) + " Points",
+                        "text": ":second_place_medal: *#2:* " + newDict[1] + " *|* :star: " + str(data[newDict[1]]) + " Points :star: ",
                     },
                     {
-                        "text": "*#3:* " + newDict[2] + " *|* " + str(data[newDict[2]]) + " Points",
+                        "text": ":third_place_medal: *#3:* " + newDict[2] + " *|* :star: " + str(data[newDict[2]]) + " Points :star: ",
                     },
                     {
-                        "text": "*#4:* " + newDict[3] + " *|* " + str(data[newDict[3]]) + " Points",
+                        "text": ":cookie: *#4:* " + newDict[3] + " *|* :star: " + str(data[newDict[3]]) + " Points :star: ",
                     },
                     {
-                        "text": "*#5:* " + newDict[4] + " *|* " + str(data[newDict[4]]) + " Points",
+                        "text": ":candy: *#5:* " + newDict[4] + " *|* :star: " + str(data[newDict[4]]) + " Points :star: ",
                     }
                 ]
             })

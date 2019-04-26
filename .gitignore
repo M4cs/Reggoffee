@@ -1,4 +1,3 @@
-app/*.json
 .flaskenv/
 .vscode/
 __pycache__/
