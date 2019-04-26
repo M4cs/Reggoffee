@@ -64,10 +64,10 @@ class CheckStatus(Resource):
                 "text": "*Current Status Of Coffee*",
                 "attachments": [
                     {
-                        "text": "*Left Pot Status:* " + leftstatus
+                        "text": "*" + leftstatus + "*"
                     },
                     {
-                        "text": "*Right Pot Status:* " + rightstatus
+                        "text": "*" + rightstatus + "*"
                     }
                 ]
             })
