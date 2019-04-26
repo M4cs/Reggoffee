@@ -7,6 +7,7 @@ import json
 
 tz = pytz.timezone('America/New_York')
 currentDT = datetime.now(tz)
+now = currentDT.strftime("%I:%M:%S %p")
 
 def change_parser():
     parser = reqparse.RequestParser()
@@ -21,7 +22,7 @@ class MadeCoffee(Resource):
         if data['text'] == 'left':
             with open('app/status.json', 'r+') as json_file:
                 obj = json.load(json_file)
-                obj['leftpot']['status'] = "Last Pot Was Made At: {}".format(currentDT.strftime("%I:%M:%S %p")) + "\n{} made the pot this time.".format(username)
+                obj['leftpot']['status'] = "Last Pot Was Made At: %s\n%s made the pot this time." % (now, username)
                 json_file.seek(0)
                 json.dump(obj, json_file, indent=4)
                 json_file.truncate()
@@ -29,7 +30,7 @@ class MadeCoffee(Resource):
         elif data['text'] == 'right':
             with open('app/status.json', 'r+') as json_file:
                 obj = json.load(json_file)
-                obj['rightpot']['status'] = obj['leftpot']['status'] = "Last Pot Was Made At: {}".format(currentDT.strftime("%I:%M:%S %p")) + "\n{} made the pot this time.".format(username)obj['leftpot']['status'] = "Last Pot Was Made At: {}".format(currentDT.strftime("%I:%M:%S %p")) + "\n{} made the pot this time.".format(username)
+                obj['rightpot']['status'] = "Last Pot Was Made At: %s\n%s made the pot this time." % (now, username)
                 json_file.seek(0)
                 json.dump(obj, json_file, indent=4)
                 json_file.truncate()
