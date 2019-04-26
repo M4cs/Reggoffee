@@ -1,4 +1,10 @@
 {
-    "leftpot": false,
-    "rightpot": true
+    "leftpot": {
+        "status": true,
+        "reported_by": "max"
+    },
+    "rightpot": {
+        "status": false,
+        "reported_by": ""
+    }
 }

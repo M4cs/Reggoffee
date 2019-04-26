@@ -16,8 +16,9 @@ class MadeCoffee(Resource):
         if data['text'] == 'left':
             with open('app/status.json', 'r+') as json_file:
                 obj = json.load(json_file)
-                if obj['leftpot'] == False:
-                    obj['leftpot'] = True
+                if obj['leftpot']['status'] == False:
+                    obj['leftpot']['status'] = True
+                    obj['leftpot']['reported_by'] = username
                 else:
                     return jsonify({
                         "response_type": "in_channel",
@@ -36,7 +37,8 @@ class MadeCoffee(Resource):
             with open('app/status.json', 'r+') as json_file:
                 obj = json.load(json_file)
                 if obj['rightpot'] == False:
-                    obj['rightpot'] = True
+                    obj['rightpot']['status'] = True
+                    obj['rightpot']['reported_by'] = username
                 else:
                     return jsonify({
                         "response_type": "in_channel",
@@ -77,8 +79,9 @@ class OutOfCoffee(Resource):
         if data['text'] == 'left':
             with open('app/status.json', 'r+') as json_file:
                 obj = json.load(json_file)
-                if obj['leftpot'] == True:
-                    obj['leftpot'] = False
+                if obj['leftpot']['status'] == True:
+                    obj['leftpot']['status'] = False
+                    obj['leftpot']['reported_by'] = username
                 else:
                     return jsonify({
                         "response_type": "in_channel",
@@ -96,8 +99,9 @@ class OutOfCoffee(Resource):
         elif data['text'] == 'right':
             with open('app/status.json', 'r+') as json_file:
                 obj = json.load(json_file)
-                if obj['rightpot'] == True:
-                    obj['rightpot'] = False
+                if obj['rightpot']['status'] == True:
+                    obj['rightpot']['status'] = False
+                    obj['rightpot']['reported_by'] = username
                 else:
                     return jsonify({
                         "response_type": "in_channel",
@@ -140,8 +144,10 @@ class CheckStatus(Resource):
     def post(self):
         with open('app/status.json', 'r+') as json_file:
             data = json.load(json_file)
-            leftstatus = data['leftpot']
-            rightstatus = data['rightpot']
+            leftstatus = data['leftpot']['status']
+            leftreport = data['leftpot']['reported_by']
+            rightstatus = data['rightpot']['status']
+            rightreport = data['rightpot']['reported_by']
             if leftstatus == True:
                 lstat = 'There Is Coffee!'
             else:
@@ -156,10 +162,10 @@ class CheckStatus(Resource):
                 "text": "*Current Status Of Coffee*",
                 "attachments": [
                     {
-                        "text": "*Left Pot Status:* " + lstat
+                        "text": "*Left Pot Status:* " + lstat + "\nReported by: " + leftstatus
                     },
                     {
-                        "text": "*Right Pot Status:* " + rstat
+                        "text": "*Right Pot Status:* " + rstat + "\nReported by: " + rightstatus
                     }
                 ]
             })
@@ -180,16 +186,16 @@ class Leaderboard(Resource):
                         "text": "*#1:* " + newDict[0] + " *|* " + str(data[newDict[0]]) + " Points",
                     },
                     {
-                        "text": "*#2:* " + newDict[1] + " *|* " + str(data[newDict[0]]) + " Points",
+                        "text": "*#2:* " + newDict[1] + " *|* " + str(data[newDict[1]]) + " Points",
                     },
                     {
-                        "text": "*#3:* " + newDict[2] + " *|* " + str(data[newDict[0]]) + " Points",
+                        "text": "*#3:* " + newDict[2] + " *|* " + str(data[newDict[2]]) + " Points",
                     },
                     {
-                        "text": "*#4:* " + newDict[3] + " *|* " + str(data[newDict[0]]) + " Points",
+                        "text": "*#4:* " + newDict[3] + " *|* " + str(data[newDict[3]]) + " Points",
                     },
                     {
-                        "text": "*#5:* " + newDict[4] + " *|* " + str(data[newDict[0]]) + " Points",
+                        "text": "*#5:* " + newDict[4] + " *|* " + str(data[newDict[4]]) + " Points",
                     }
                 ]
             })
@@ -215,7 +221,7 @@ class MyPoints(Resource):
                 else:
                     return jsonify({
                         "response_type": "in_channel",
-                        "text": "Your current points: " + points
+                        "text": "Your current points: " + str(points)
                     })
                     
 class CoffeeHelp(Resource):

@@ -1,0 +1,5 @@
+app/*.json
+.flaskenv/
+.vscode/
+__pycache__/
+app/__pycache__/
