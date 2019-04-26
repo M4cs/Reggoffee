@@ -163,10 +163,10 @@ class CheckStatus(Resource):
                 "text": "*Current Status Of Coffee*",
                 "attachments": [
                     {
-                        "text": "*Left Pot Status:* " + lstat + "\nReported by: " + leftstatus
+                        "text": "*Left Pot Status:* " + lstat + "\nReported by: " + leftreport
                     },
                     {
-                        "text": "*Right Pot Status:* " + rstat + "\nReported by: " + rightstatus
+                        "text": "*Right Pot Status:* " + rstat + "\nReported by: " + rightreport
                     }
                 ]
             })
