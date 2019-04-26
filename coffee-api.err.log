@@ -1,0 +1,739 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Apr 26 06:37:41 2019] ***
+compiled with version: 5.4.0 20160609 on 17 April 2019 04:15:47
+os: Linux-4.4.0-143-generic #169-Ubuntu SMP Thu Feb 7 07:56:38 UTC 2019
+nodename: mainbox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/max/coffee-api
+detected binary path: /home/max/coffee-api/.flaskapp/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 15733
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :3050 fd 4
+spawned uWSGI http 1 (pid: 23459)
+uwsgi socket 0 bound to TCP address 127.0.0.1:46726 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xcf6040
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xcf6040 pid: 23456 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 23456, cores: 1)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Apr 26 06:37:48 2019] ***
+compiled with version: 5.4.0 20160609 on 17 April 2019 04:15:47
+os: Linux-4.4.0-143-generic #169-Ubuntu SMP Thu Feb 7 07:56:38 UTC 2019
+nodename: mainbox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/max/coffee-api
+detected binary path: /home/max/coffee-api/.flaskapp/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 15733
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :3050 fd 4
+spawned uWSGI http 1 (pid: 23472)
+uwsgi socket 0 bound to TCP address 127.0.0.1:35921 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x19da040
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x19da040 pid: 23469 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 23469, cores: 1)
+[pid: 23469|app: 0|req: 1/1] 127.0.0.1 () {54 vars in 837 bytes} [Fri Apr 26 06:39:08 2019] POST /help => generated 574 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+{'Empty3': 0, 'max': 2, 'Empty2': 0, 'Empty': 0, 'Empty1': 0}
+['max', 'Empty3', 'Empty2', 'Empty', 'Empty1']
+[pid: 23469|app: 0|req: 2/2] 127.0.0.1 () {54 vars in 849 bytes} [Fri Apr 26 06:39:13 2019] POST /leaderboard => generated 274 bytes in 0 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Apr 26 06:40:21 2019] ***
+compiled with version: 5.4.0 20160609 on 17 April 2019 04:15:47
+os: Linux-4.4.0-143-generic #169-Ubuntu SMP Thu Feb 7 07:56:38 UTC 2019
+nodename: mainbox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/max/coffee-api
+detected binary path: /home/max/coffee-api/.flaskapp/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 15733
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :3050 fd 4
+spawned uWSGI http 1 (pid: 23502)
+uwsgi socket 0 bound to TCP address 127.0.0.1:36230 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x2063040
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x2063040 pid: 23501 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 23501, cores: 1)
+{'Empty2': 0, 'max': 2, 'Empty3': 0, 'Empty1': 0, 'Empty': 0}
+['max', 'Empty2', 'Empty3', 'Empty1', 'Empty']
+[pid: 23501|app: 0|req: 1/1] 127.0.0.1 () {54 vars in 847 bytes} [Fri Apr 26 06:40:27 2019] POST /leaderboard => generated 274 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+{'Empty2': 0, 'Empty5': 0, 'Empty1': 0, 'Empty3': 0, 'Empty4': 0, 'Empty': 0}
+['Empty2', 'Empty5', 'Empty1', 'Empty3', 'Empty4', 'Empty']
+[pid: 23501|app: 0|req: 2/2] 127.0.0.1 () {54 vars in 843 bytes} [Fri Apr 26 06:41:21 2019] POST /leaderboard => generated 278 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 23501|app: 0|req: 3/3] 127.0.0.1 () {54 vars in 836 bytes} [Fri Apr 26 06:44:14 2019] POST /help => generated 574 bytes in 0 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 23501|app: 0|req: 4/4] 127.0.0.1 () {54 vars in 834 bytes} [Fri Apr 26 06:49:01 2019] POST /help => generated 574 bytes in 0 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 23501|app: 0|req: 5/5] 127.0.0.1 () {54 vars in 838 bytes} [Fri Apr 26 06:58:18 2019] POST /status => generated 191 bytes in 0 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 23501|app: 0|req: 6/6] 127.0.0.1 () {54 vars in 848 bytes} [Fri Apr 26 06:58:30 2019] POST /outofcoffee => generated 170 bytes in 2 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 23501|app: 0|req: 7/7] 127.0.0.1 () {54 vars in 840 bytes} [Fri Apr 26 06:58:47 2019] POST /status => generated 204 bytes in 0 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+[2019-04-26 07:01:50,083] ERROR in app: Exception on /mypoints [POST]
+Traceback (most recent call last):
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "./app/resources.py", line 218, in post
+    "text": "Your current points: " + points
+TypeError: Can't convert 'int' object to str implicitly
+[pid: 23501|app: 0|req: 8/8] 127.0.0.1 () {54 vars in 838 bytes} [Fri Apr 26 07:01:50 2019] POST /mypoints => generated 37 bytes in 3 msecs (HTTP/1.0 500) 2 headers in 90 bytes (1 switches on core 0)
+[2019-04-26 07:01:56,529] ERROR in app: Exception on /mypoints [POST]
+Traceback (most recent call last):
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "./app/resources.py", line 218, in post
+    "text": "Your current points: " + points
+TypeError: Can't convert 'int' object to str implicitly
+[pid: 23501|app: 0|req: 9/9] 127.0.0.1 () {54 vars in 843 bytes} [Fri Apr 26 07:01:56 2019] POST /mypoints => generated 37 bytes in 2 msecs (HTTP/1.0 500) 2 headers in 90 bytes (1 switches on core 0)
+[2019-04-26 07:01:58,805] ERROR in app: Exception on /mypoints [POST]
+Traceback (most recent call last):
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "./app/resources.py", line 218, in post
+    "text": "Your current points: " + points
+TypeError: Can't convert 'int' object to str implicitly
+[pid: 23501|app: 0|req: 10/10] 127.0.0.1 () {54 vars in 843 bytes} [Fri Apr 26 07:01:58 2019] POST /mypoints => generated 37 bytes in 2 msecs (HTTP/1.0 500) 2 headers in 90 bytes (1 switches on core 0)
+[2019-04-26 07:02:08,535] ERROR in app: Exception on /mypoints [POST]
+Traceback (most recent call last):
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "./app/resources.py", line 218, in post
+    "text": "Your current points: " + points
+TypeError: Can't convert 'int' object to str implicitly
+[pid: 23501|app: 0|req: 11/11] 127.0.0.1 () {54 vars in 839 bytes} [Fri Apr 26 07:02:08 2019] POST /mypoints => generated 37 bytes in 2 msecs (HTTP/1.0 500) 2 headers in 90 bytes (1 switches on core 0)
+{'Empty2': 0, 'Empty5': 0, 'Empty1': 0, 'max': 1, 'Empty3': 0, 'Empty4': 0, 'Empty': 0}
+['max', 'Empty2', 'Empty5', 'Empty1', 'Empty3', 'Empty4', 'Empty']
+[pid: 23501|app: 0|req: 12/12] 127.0.0.1 () {54 vars in 847 bytes} [Fri Apr 26 07:02:27 2019] POST /leaderboard => generated 275 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+
+[pid: 23501|app: 0|req: 13/13] 127.0.0.1 () {54 vars in 849 bytes} [Fri Apr 26 11:28:30 2019] POST /madecoffee => generated 109 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 23501|app: 0|req: 14/14] 127.0.0.1 () {54 vars in 839 bytes} [Fri Apr 26 11:29:33 2019] POST /status => generated 204 bytes in 0 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+left
+[pid: 23501|app: 0|req: 15/15] 127.0.0.1 () {54 vars in 845 bytes} [Fri Apr 26 11:29:49 2019] POST /madecoffee => generated 96 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 71 bytes (1 switches on core 0)
+{'Empty2': 0, 'Empty5': 0, 'Empty1': 0, 'frank': 1, 'max': 1, 'Empty3': 0, 'Empty4': 0, 'Empty': 0}
+['frank', 'max', 'Empty2', 'Empty5', 'Empty1', 'Empty3', 'Empty4', 'Empty']
+[pid: 23501|app: 0|req: 16/16] 127.0.0.1 () {54 vars in 847 bytes} [Fri Apr 26 11:32:03 2019] POST /leaderboard => generated 274 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 23501|app: 0|req: 17/17] 127.0.0.1 () {54 vars in 841 bytes} [Fri Apr 26 11:47:45 2019] POST /status => generated 191 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+[2019-04-26 11:48:11,907] ERROR in app: Exception on /mypoints [POST]
+Traceback (most recent call last):
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "./app/resources.py", line 218, in post
+    "text": "Your current points: " + points
+TypeError: Can't convert 'int' object to str implicitly
+[pid: 23501|app: 0|req: 18/18] 127.0.0.1 () {54 vars in 841 bytes} [Fri Apr 26 11:48:11 2019] POST /mypoints => generated 37 bytes in 1 msecs (HTTP/1.0 500) 2 headers in 90 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Apr 26 13:02:08 2019] ***
+compiled with version: 5.4.0 20160609 on 17 April 2019 04:15:47
+os: Linux-4.4.0-143-generic #169-Ubuntu SMP Thu Feb 7 07:56:38 UTC 2019
+nodename: mainbox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/max/coffee-api
+detected binary path: /home/max/coffee-api/.flaskapp/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 15733
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :3050 fd 4
+spawned uWSGI http 1 (pid: 25348)
+uwsgi socket 0 bound to TCP address 127.0.0.1:46609 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x12dd040
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x12dd040 pid: 25347 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 25347, cores: 1)
+[pid: 25347|app: 0|req: 1/1] 127.0.0.1 () {54 vars in 842 bytes} [Fri Apr 26 13:04:07 2019] POST /mypoints => generated 63 bytes in 2 msecs (HTTP/1.0 200) 2 headers in 71 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Apr 26 13:04:37 2019] ***
+compiled with version: 5.4.0 20160609 on 17 April 2019 04:15:47
+os: Linux-4.4.0-143-generic #169-Ubuntu SMP Thu Feb 7 07:56:38 UTC 2019
+nodename: mainbox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/max/coffee-api
+detected binary path: /home/max/coffee-api/.flaskapp/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 15733
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :3050 fd 4
+spawned uWSGI http 1 (pid: 25382)
+uwsgi socket 0 bound to TCP address 127.0.0.1:36398 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xd48040
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xd48040 pid: 25381 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 25381, cores: 1)
+[pid: 25381|app: 0|req: 1/1] 127.0.0.1 () {54 vars in 837 bytes} [Fri Apr 26 13:04:46 2019] POST /status => generated 190 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Apr 26 13:06:21 2019] ***
+compiled with version: 5.4.0 20160609 on 17 April 2019 04:15:47
+os: Linux-4.4.0-143-generic #169-Ubuntu SMP Thu Feb 7 07:56:38 UTC 2019
+nodename: mainbox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/max/coffee-api
+detected binary path: /home/max/coffee-api/.flaskapp/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 15733
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :3050 fd 4
+spawned uWSGI http 1 (pid: 25396)
+uwsgi socket 0 bound to TCP address 127.0.0.1:38786 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1fc9040
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1fc9040 pid: 25395 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 25395, cores: 1)
+[pid: 25395|app: 0|req: 1/1] 127.0.0.1 () {54 vars in 835 bytes} [Fri Apr 26 13:06:30 2019] POST /help => generated 573 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+{'Empty4': 0, 'Empty3': 0, 'frank': 1, 'Empty5': 0, 'Empty2': 0, 'Empty': 0, 'max': 1, 'Empty1': 0}
+['frank', 'max', 'Empty4', 'Empty3', 'Empty5', 'Empty2', 'Empty', 'Empty1']
+[pid: 25395|app: 0|req: 2/2] 127.0.0.1 () {54 vars in 847 bytes} [Fri Apr 26 13:06:36 2019] POST /leaderboard => generated 351 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 25395|app: 0|req: 3/3] 127.0.0.1 () {54 vars in 839 bytes} [Fri Apr 26 13:12:22 2019] POST /status => generated 190 bytes in 0 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 25395|app: 0|req: 4/4] 127.0.0.1 () {54 vars in 839 bytes} [Fri Apr 26 14:02:12 2019] POST /status => generated 190 bytes in 0 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 25395|app: 0|req: 5/5] 127.0.0.1 () {54 vars in 849 bytes} [Fri Apr 26 14:07:08 2019] POST /outofcoffee => generated 169 bytes in 3 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+left
+[pid: 25395|app: 0|req: 6/6] 127.0.0.1 () {54 vars in 843 bytes} [Fri Apr 26 14:07:12 2019] POST /madecoffee => generated 93 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 71 bytes (1 switches on core 0)
+{'Empty4': 0, 'Empty3': 0, 'frank': 1, 'Empty5': 0, 'Empty2': 0, 'Empty': 0, 'max': 3, 'Empty1': 0}
+['max', 'frank', 'Empty4', 'Empty3', 'Empty5', 'Empty2', 'Empty', 'Empty1']
+[pid: 25395|app: 0|req: 7/7] 127.0.0.1 () {54 vars in 849 bytes} [Fri Apr 26 14:07:25 2019] POST /leaderboard => generated 351 bytes in 0 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+{'Empty4': 0, 'Empty3': 0, 'frank': 1, 'Empty5': 0, 'Empty2': 0, 'Empty': 0, 'max': 3, 'Empty1': 0}
+['max', 'frank', 'Empty4', 'Empty3', 'Empty5', 'Empty2', 'Empty', 'Empty1']
+[pid: 25395|app: 0|req: 8/8] 127.0.0.1 () {54 vars in 851 bytes} [Fri Apr 26 14:51:32 2019] POST /leaderboard => generated 351 bytes in 0 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 25395|app: 0|req: 9/9] 127.0.0.1 () {54 vars in 837 bytes} [Fri Apr 26 14:58:02 2019] POST /help => generated 573 bytes in 0 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 25395|app: 0|req: 10/10] 127.0.0.1 () {54 vars in 839 bytes} [Fri Apr 26 14:58:22 2019] POST /status => generated 190 bytes in 0 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+{'Empty4': 0, 'Empty3': 0, 'frank': 1, 'Empty5': 0, 'Empty2': 0, 'Empty': 0, 'max': 3, 'Empty1': 0}
+['max', 'frank', 'Empty4', 'Empty3', 'Empty5', 'Empty2', 'Empty', 'Empty1']
+[pid: 25395|app: 0|req: 11/11] 127.0.0.1 () {54 vars in 849 bytes} [Fri Apr 26 14:58:31 2019] POST /leaderboard => generated 351 bytes in 0 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+{'Empty4': 0, 'Empty3': 0, 'frank': 1, 'Empty5': 0, 'Empty2': 0, 'Empty': 0, 'max': 3, 'Empty1': 0}
+['max', 'frank', 'Empty4', 'Empty3', 'Empty5', 'Empty2', 'Empty', 'Empty1']
+[pid: 25395|app: 0|req: 12/12] 127.0.0.1 () {54 vars in 851 bytes} [Fri Apr 26 15:00:18 2019] POST /leaderboard => generated 351 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Apr 26 15:52:24 2019] ***
+compiled with version: 5.4.0 20160609 on 17 April 2019 04:15:47
+os: Linux-4.4.0-143-generic #169-Ubuntu SMP Thu Feb 7 07:56:38 UTC 2019
+nodename: mainbox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/max/coffee-api
+detected binary path: /home/max/coffee-api/.flaskapp/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 15733
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :3050 fd 4
+spawned uWSGI http 1 (pid: 26809)
+uwsgi socket 0 bound to TCP address 127.0.0.1:46311 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x14c4040
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x14c4040 pid: 26808 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 26808, cores: 1)
+{'Empty': 0, 'Empty2': 0, 'Empty1': 0, 'max': 2, 'Empty3': 0}
+['max', 'Empty', 'Empty2', 'Empty1', 'Empty3']
+[pid: 26808|app: 0|req: 1/1] 127.0.0.1 () {54 vars in 849 bytes} [Fri Apr 26 15:52:34 2019] POST /leaderboard => generated 427 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+{'Empty2': 0, 'frank': 1, 'Empty1': 0, 'max': 3, 'Empty3': 0}
+['max', 'frank', 'Empty2', 'Empty1', 'Empty3']
+[pid: 26808|app: 0|req: 2/2] 127.0.0.1 () {54 vars in 845 bytes} [Fri Apr 26 15:53:17 2019] POST /leaderboard => generated 427 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 26808|app: 0|req: 3/3] 127.0.0.1 () {54 vars in 841 bytes} [Fri Apr 26 15:53:25 2019] POST /mypoints => generated 63 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 71 bytes (1 switches on core 0)
+[2019-04-26 15:53:33,694] ERROR in app: Exception on /status [POST]
+Traceback (most recent call last):
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "./app/resources.py", line 165, in post
+    "text": "*Left Pot Status:* " + lstat + "\nReported by: " + leftstatus
+TypeError: Can't convert 'bool' object to str implicitly
+[pid: 26808|app: 0|req: 4/4] 127.0.0.1 () {54 vars in 839 bytes} [Fri Apr 26 15:53:33 2019] POST /status => generated 37 bytes in 3 msecs (HTTP/1.0 500) 2 headers in 90 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Apr 26 15:55:15 2019] ***
+compiled with version: 5.4.0 20160609 on 17 April 2019 04:15:47
+os: Linux-4.4.0-143-generic #169-Ubuntu SMP Thu Feb 7 07:56:38 UTC 2019
+nodename: mainbox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/max/coffee-api
+detected binary path: /home/max/coffee-api/.flaskapp/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 15733
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :3050 fd 4
+spawned uWSGI http 1 (pid: 26856)
+uwsgi socket 0 bound to TCP address 127.0.0.1:35177 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1105040
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1105040 pid: 26855 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 26855, cores: 1)
+True
+[2019-04-26 15:55:19,061] ERROR in app: Exception on /status [POST]
+Traceback (most recent call last):
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "./app/resources.py", line 166, in post
+    "text": "*Left Pot Status:* " + lstat + "\nReported by: " + leftstatus
+TypeError: Can't convert 'bool' object to str implicitly
+[pid: 26855|app: 0|req: 1/1] 127.0.0.1 () {54 vars in 841 bytes} [Fri Apr 26 15:55:19 2019] POST /status => generated 37 bytes in 4 msecs (HTTP/1.0 500) 2 headers in 90 bytes (1 switches on core 0)
+True
+[2019-04-26 15:55:20,340] ERROR in app: Exception on /status [POST]
+Traceback (most recent call last):
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "./app/resources.py", line 166, in post
+    "text": "*Left Pot Status:* " + lstat + "\nReported by: " + leftstatus
+TypeError: Can't convert 'bool' object to str implicitly
+[pid: 26855|app: 0|req: 2/2] 127.0.0.1 () {54 vars in 839 bytes} [Fri Apr 26 15:55:20 2019] POST /status => generated 37 bytes in 1 msecs (HTTP/1.0 500) 2 headers in 90 bytes (1 switches on core 0)
+True
+[2019-04-26 15:55:56,589] ERROR in app: Exception on /status [POST]
+Traceback (most recent call last):
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "./app/resources.py", line 166, in post
+    "text": "*Left Pot Status:* " + lstat + "\nReported by: " + leftstatus
+TypeError: Can't convert 'bool' object to str implicitly
+[pid: 26855|app: 0|req: 3/3] 127.0.0.1 () {54 vars in 837 bytes} [Fri Apr 26 15:55:56 2019] POST /status => generated 37 bytes in 1 msecs (HTTP/1.0 500) 2 headers in 90 bytes (1 switches on core 0)
+True
+[2019-04-26 15:55:58,231] ERROR in app: Exception on /status [POST]
+Traceback (most recent call last):
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/max/coffee-api/.flaskapp/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "./app/resources.py", line 166, in post
+    "text": "*Left Pot Status:* " + lstat + "\nReported by: " + leftstatus
+TypeError: Can't convert 'bool' object to str implicitly
+[pid: 26855|app: 0|req: 4/4] 127.0.0.1 () {54 vars in 836 bytes} [Fri Apr 26 15:55:58 2019] POST /status => generated 37 bytes in 2 msecs (HTTP/1.0 500) 2 headers in 90 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Apr 26 15:56:05 2019] ***
+compiled with version: 5.4.0 20160609 on 17 April 2019 04:15:47
+os: Linux-4.4.0-143-generic #169-Ubuntu SMP Thu Feb 7 07:56:38 UTC 2019
+nodename: mainbox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/max/coffee-api
+detected binary path: /home/max/coffee-api/.flaskapp/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 15733
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :3050 fd 4
+spawned uWSGI http 1 (pid: 26883)
+uwsgi socket 0 bound to TCP address 127.0.0.1:46457 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x11f2040
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x11f2040 pid: 26882 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 26882, cores: 1)
+True
+[pid: 26882|app: 0|req: 1/1] 127.0.0.1 () {54 vars in 840 bytes} [Fri Apr 26 15:56:07 2019] POST /status => generated 224 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Apr 26 15:57:26 2019] ***
+compiled with version: 5.4.0 20160609 on 17 April 2019 04:15:47
+os: Linux-4.4.0-143-generic #169-Ubuntu SMP Thu Feb 7 07:56:38 UTC 2019
+nodename: mainbox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/max/coffee-api
+detected binary path: /home/max/coffee-api/.flaskapp/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 15733
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :3050 fd 4
+spawned uWSGI http 1 (pid: 26908)
+uwsgi socket 0 bound to TCP address 127.0.0.1:32795 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x20bf040
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x20bf040 pid: 26907 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 26907, cores: 1)
+True
+[pid: 26907|app: 0|req: 1/1] 127.0.0.1 () {54 vars in 836 bytes} [Fri Apr 26 15:57:31 2019] POST /status => generated 228 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+{'Empty1': 0, 'Empty3': 0, 'frank': 1, 'Empty2': 0, 'max': 3}
+['max', 'frank', 'Empty1', 'Empty3', 'Empty2']
+[pid: 26907|app: 0|req: 2/2] 127.0.0.1 () {54 vars in 844 bytes} [Fri Apr 26 16:08:29 2019] POST /leaderboard => generated 427 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+True
+[pid: 26907|app: 0|req: 3/3] 127.0.0.1 () {54 vars in 840 bytes} [Fri Apr 26 16:39:29 2019] POST /status => generated 228 bytes in 0 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+{'Empty1': 0, 'Empty3': 0, 'frank': 1, 'Empty2': 0, 'max': 3}
+['max', 'frank', 'Empty1', 'Empty3', 'Empty2']
+[pid: 26907|app: 0|req: 4/4] 127.0.0.1 () {54 vars in 851 bytes} [Fri Apr 26 16:50:23 2019] POST /leaderboard => generated 427 bytes in 0 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Apr 26 16:51:54 2019] ***
+compiled with version: 5.4.0 20160609 on 17 April 2019 04:15:47
+os: Linux-4.4.0-143-generic #169-Ubuntu SMP Thu Feb 7 07:56:38 UTC 2019
+nodename: mainbox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/max/coffee-api
+detected binary path: /home/max/coffee-api/.flaskapp/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 15733
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :3050 fd 4
+spawned uWSGI http 1 (pid: 27123)
+uwsgi socket 0 bound to TCP address 127.0.0.1:40440 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x232f040
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x232f040 pid: 27122 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 27122, cores: 1)
+[pid: 27122|app: 0|req: 1/1] 127.0.0.1 () {54 vars in 837 bytes} [Fri Apr 26 16:52:15 2019] POST /help => generated 574 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 27122|app: 0|req: 2/2] 127.0.0.1 () {54 vars in 841 bytes} [Fri Apr 26 16:52:24 2019] POST /mypoints => generated 63 bytes in 2 msecs (HTTP/1.0 200) 2 headers in 71 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Apr 26 16:54:50 2019] ***
+compiled with version: 5.4.0 20160609 on 17 April 2019 04:15:47
+os: Linux-4.4.0-143-generic #169-Ubuntu SMP Thu Feb 7 07:56:38 UTC 2019
+nodename: mainbox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/max/coffee-api
+detected binary path: /home/max/coffee-api/.flaskapp/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 15733
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :3050 fd 4
+spawned uWSGI http 1 (pid: 27150)
+uwsgi socket 0 bound to TCP address 127.0.0.1:41198 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1eec040
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+Traceback (most recent call last):
+  File "./wsgi.py", line 1, in <module>
+    from app import app
+  File "./app/__init__.py", line 17, in <module>
+    from app import resources
+  File "./app/resources.py", line 211
+    return jsonify({
+    ^
+IndentationError: expected an indented block
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 27149, cores: 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 27149|app: -1|req: -1/1] 127.0.0.1 () {54 vars in 843 bytes} [Fri Apr 26 16:55:01 2019] POST /mypoints => generated 21 bytes in 0 msecs (HTTP/1.0 500) 2 headers in 83 bytes (0 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Apr 26 16:55:35 2019] ***
+compiled with version: 5.4.0 20160609 on 17 April 2019 04:15:47
+os: Linux-4.4.0-143-generic #169-Ubuntu SMP Thu Feb 7 07:56:38 UTC 2019
+nodename: mainbox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/max/coffee-api
+detected binary path: /home/max/coffee-api/.flaskapp/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 15733
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :3050 fd 4
+spawned uWSGI http 1 (pid: 27156)
+uwsgi socket 0 bound to TCP address 127.0.0.1:35971 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1cc0040
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1cc0040 pid: 27155 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 27155, cores: 1)
+[pid: 27155|app: 0|req: 1/1] 127.0.0.1 () {54 vars in 841 bytes} [Fri Apr 26 16:55:39 2019] POST /mypoints => generated 63 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 71 bytes (1 switches on core 0)
+left
+[pid: 27155|app: 0|req: 2/2] 127.0.0.1 () {54 vars in 847 bytes} [Fri Apr 26 16:57:36 2019] POST /madecoffee => generated 252 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 27155|app: 0|req: 3/3] 127.0.0.1 () {54 vars in 851 bytes} [Fri Apr 26 16:58:26 2019] POST /outofcoffee => generated 172 bytes in 2 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 27155|app: 0|req: 4/4] 127.0.0.1 () {54 vars in 847 bytes} [Fri Apr 26 16:58:36 2019] POST /outofcoffee => generated 207 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)
+left
+[pid: 27155|app: 0|req: 5/5] 127.0.0.1 () {54 vars in 849 bytes} [Fri Apr 26 16:58:56 2019] POST /madecoffee => generated 96 bytes in 2 msecs (HTTP/1.0 200) 2 headers in 71 bytes (1 switches on core 0)
+right
+[pid: 27155|app: 0|req: 6/6] 127.0.0.1 () {54 vars in 843 bytes} [Fri Apr 26 16:59:04 2019] POST /madecoffee => generated 255 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 72 bytes (1 switches on core 0)

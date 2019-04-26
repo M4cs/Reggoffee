@@ -8,6 +8,10 @@ app = Flask(__name__)
 def get():
     return jsonify({  "message": "Coffee Bot API" })
 
+@app.errorhandler(500)
+def error(self):
+    return jsonify({ "text": "Error. The Bot Couldn't Handle Your Command" })
+
 api = Api(app)
 
 from app import resources
