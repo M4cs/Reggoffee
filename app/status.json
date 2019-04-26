@@ -1,10 +1,8 @@
 {
     "leftpot": {
-        "reported_by": "steve",
-        "status": true
+        "status": ""
     },
     "rightpot": {
-        "reported_by": "",
-        "status": false
+        "status": ""
     }
 }

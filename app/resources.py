@@ -1,7 +1,12 @@
 from flask import request, jsonify
 from flask_restful import Resource, reqparse
 from app import app
+from datetime
+import pytz
 import json
+
+tz = pytz.timezone('America/New_York')
+currentDT = datetime.now(tz)
 
 def change_parser():
     parser = reqparse.RequestParser()
@@ -16,18 +21,7 @@ class MadeCoffee(Resource):
         if data['text'] == 'left':
             with open('app/status.json', 'r+') as json_file:
                 obj = json.load(json_file)
-                if obj['leftpot']['status'] == False:
-                    obj['leftpot']['status'] = True
-                    obj['leftpot']['reported_by'] = username
-                else:
-                    return jsonify({
-                        "text": "The left pot already had coffee in it!",
-                        "attachments": [
-                            {
-                            "text": "If you had to make a new pot and there was none left in the left pot, please use the command `/outofcoffee left` and then use this command again."
-                            }
-                        ]
-                    })
+                obj['leftpot']['status'] = "Last Pot Was Made At: {}".format(currentDT.strftime("%I:%M:%S %p")) + "\n{} made the pot this time.".format(username)
                 json_file.seek(0)
                 json.dump(obj, json_file, indent=4)
                 json_file.truncate()
@@ -35,18 +29,7 @@ class MadeCoffee(Resource):
         elif data['text'] == 'right':
             with open('app/status.json', 'r+') as json_file:
                 obj = json.load(json_file)
-                if obj['rightpot']['status'] == False:
-                    obj['rightpot']['status'] = True
-                    obj['rightpot']['reported_by'] = username
-                else:
-                    return jsonify({
-                        "text": "The right pot already had coffee in it!",
-                        "attachments": [
-                            {
-                            "text": "If you had to make a new pot and there was none left in the right pot, please use the command `/outofcoffee right` and then use this command again."
-                            }
-                        ]
-                    })
+                obj['rightpot']['status'] = obj['leftpot']['status'] = "Last Pot Was Made At: {}".format(currentDT.strftime("%I:%M:%S %p")) + "\n{} made the pot this time.".format(username)obj['leftpot']['status'] = "Last Pot Was Made At: {}".format(currentDT.strftime("%I:%M:%S %p")) + "\n{} made the pot this time.".format(username)
                 json_file.seek(0)
                 json.dump(obj, json_file, indent=4)
                 json_file.truncate()
@@ -68,96 +51,22 @@ class MadeCoffee(Resource):
             "text": "Thank you {} for making some coffee in the left pot!".format(data['user_name'])
         })
         
-class OutOfCoffee(Resource):
-    def post(self):
-        data = request.form
-        username = data['user_name']
-        if data['text'] == 'left':
-            with open('app/status.json', 'r+') as json_file:
-                obj = json.load(json_file)
-                if obj['leftpot']['status'] == True:
-                    obj['leftpot']['status'] = False
-                    obj['leftpot']['reported_by'] = username
-                else:
-                    return jsonify({
-                        "text": "Error! The pot was marked as empty already!",
-                        "attachments": [
-                            {
-                            "text": "If you go make a new pot make sure to use the command `/madecoffee left` to switch the status!"
-                            }
-                        ]
-                    })
-                json_file.seek(0)
-                json.dump(obj, json_file, indent=4)
-                json_file.truncate()
-                json_file.close()
-        elif data['text'] == 'right':
-            with open('app/status.json', 'r+') as json_file:
-                obj = json.load(json_file)
-                if obj['rightpot']['status'] == True:
-                    obj['rightpot']['status'] = False
-                    obj['rightpot']['reported_by'] = username
-                else:
-                    return jsonify({
-                        "text": "Error! The pot was marked as empty already!",
-                        "attachments": [
-                            {
-                            "text": "If you go make a new pot make sure to use the command `/madecoffee right` to switch the status!"
-                            }
-                        ]
-                    })
-                json_file.seek(0)
-                json.dump(obj, json_file, indent=4)
-                json_file.truncate()
-                json_file.close()
-        else:
-            return jsonify({
-                "text": "Error! Please try again, this time specify which pot you made it in!"
-            })
-        with open('app/leaderboard.json', 'r+') as json_file:
-            obj = json.load(json_file)
-            if username not in obj:
-                obj[username] = 0
-            obj[username] += 1
-            json_file.seek(0)
-            json.dump(obj, json_file, indent=4)
-            json_file.truncate()
-            json_file.close()
-        return jsonify({
-            "text": "Thank you {} for marking the pot as empty!".format(data['user_name']),
-            "attachments": [
-                {
-                    "text": "*(It'd be nice if you made some after you finish :wink: )*"
-                }
-            ]
-        })
-
 class CheckStatus(Resource):
     def post(self):
         with open('app/status.json', 'r+') as json_file:
             data = json.load(json_file)
             leftstatus = data['leftpot']['status']
-            leftreport = data['leftpot']['reported_by']
             rightstatus = data['rightpot']['status']
-            rightreport = data['rightpot']['reported_by']
             print(leftstatus)
-            if leftstatus == True:
-                lstat = 'There Is Coffee!'
-            else:
-                lstat = 'No Coffee At The Moment :cry:'
-            if rightstatus == True:
-                rstat = 'There Is Coffee!'
-            else:
-                rstat = 'No Coffee At The Moment :cry:'
             json_file.close()
             return jsonify({
                 "text": "*Current Status Of Coffee*",
                 "attachments": [
                     {
-                        "text": "*Left Pot Status:* " + lstat + "\n*Reported by:* " + leftreport
+                        "text": "*Left Pot Status:* " + leftstatus
                     },
                     {
-                        "text": "*Right Pot Status:* " + rstat + "\n*Reported by:* " + rightreport
+                        "text": "*Right Pot Status:* " + rightstatus
                     }
                 ]
             })
