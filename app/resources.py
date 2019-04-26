@@ -35,7 +35,7 @@ class MadeCoffee(Resource):
         elif data['text'] == 'right':
             with open('app/status.json', 'r+') as json_file:
                 obj = json.load(json_file)
-                if obj['rightpot'] == False:
+                if obj['rightpot']['status'] == False:
                     obj['rightpot']['status'] = True
                     obj['rightpot']['reported_by'] = username
                 else:
