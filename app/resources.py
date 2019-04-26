@@ -22,7 +22,7 @@ class MadeCoffee(Resource):
         if data['text'] == 'left':
             with open('app/status.json', 'r+') as json_file:
                 obj = json.load(json_file)
-                obj['leftpot']['status'] = "Last Pot Was Made At: %s*\n*%s made the pot this time." % (now, username)
+                obj['leftpot']['status'] = "Last Pot Was Made At: %s* \n *%s made the pot this time." % (now, username)
                 json_file.seek(0)
                 json.dump(obj, json_file, indent=4)
                 json_file.truncate()
