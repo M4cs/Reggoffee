@@ -21,7 +21,6 @@ class MadeCoffee(Resource):
                     obj['leftpot']['reported_by'] = username
                 else:
                     return jsonify({
-                        "response_type": "in_channel",
                         "text": "The left pot already had coffee in it!",
                         "attachments": [
                             {
@@ -41,7 +40,6 @@ class MadeCoffee(Resource):
                     obj['rightpot']['reported_by'] = username
                 else:
                     return jsonify({
-                        "response_type": "in_channel",
                         "text": "The right pot already had coffee in it!",
                         "attachments": [
                             {
@@ -55,7 +53,6 @@ class MadeCoffee(Resource):
                 json_file.close()
         else:
             return jsonify({
-                "response_type": "in_channel",
                 "text": "Error! Please try again, this time specify which pot you made it in!"
             })
         with open('app/leaderboard.json', 'r+') as json_file:
@@ -68,7 +65,6 @@ class MadeCoffee(Resource):
             json_file.truncate()
             json_file.close()
         return jsonify({
-            "response_type": "in_channel",
             "text": "Thank you {} for making some coffee in the left pot!".format(data['user_name'])
         })
         
@@ -84,7 +80,6 @@ class OutOfCoffee(Resource):
                     obj['leftpot']['reported_by'] = username
                 else:
                     return jsonify({
-                        "response_type": "in_channel",
                         "text": "Error! The pot was marked as empty already!",
                         "attachments": [
                             {
@@ -104,7 +99,6 @@ class OutOfCoffee(Resource):
                     obj['rightpot']['reported_by'] = username
                 else:
                     return jsonify({
-                        "response_type": "in_channel",
                         "text": "Error! The pot was marked as empty already!",
                         "attachments": [
                             {
@@ -118,7 +112,6 @@ class OutOfCoffee(Resource):
                 json_file.close()
         else:
             return jsonify({
-                "response_type": "in_channel",
                 "text": "Error! Please try again, this time specify which pot you made it in!"
             })
         with open('app/leaderboard.json', 'r+') as json_file:
@@ -131,7 +124,6 @@ class OutOfCoffee(Resource):
             json_file.truncate()
             json_file.close()
         return jsonify({
-            "response_type": "in_channel",
             "text": "Thank you {} for marking the pot as empty!".format(data['user_name']),
             "attachments": [
                 {
@@ -159,7 +151,6 @@ class CheckStatus(Resource):
                 rstat = 'No Coffee At The Moment :cry:'
             json_file.close()
             return jsonify({
-                "response_type": "in_channel",
                 "text": "*Current Status Of Coffee*",
                 "attachments": [
                     {
@@ -180,7 +171,6 @@ class Leaderboard(Resource):
             print(newDict)
             
             return jsonify({
-                "response_type": "in_channel",
                 "text": "*Current Coffee Leaderboard (Top 5)*",
                 "attachments": [
                     {
@@ -209,26 +199,22 @@ class MyPoints(Resource):
             obj = json.load(json_file)
             if username not in obj:
                 return jsonify({
-                    "response_type": "in_channel",
                     "text": "Error! You haven't gotten any points. Get some by making some coffee!"
                 })
             else:
                 points = obj[username]
                 if points == 0:
                     return jsonify({
-                        "response_type": "in_channel",
                         "text": "You have no points! Make some coffee and then we can talk."
                     })
                 else:
                     return jsonify({
-                        "response_type": "in_channel",
                         "text": "Your current points: " + str(points)
                     })
                     
 class CoffeeHelp(Resource):
     def post(self):
         return jsonify({
-            "response_type": "in_channel",
             "text": "*CoffeeBot Commands*",
             "attachments": [
                 {
